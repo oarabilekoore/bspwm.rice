@@ -1,0 +1,15 @@
+#!/bin/bash
+
+WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
+
+# Let user pick an image from the folder using Rofi
+SELECTED=$(find "$WALLPAPER_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) |
+  sort |
+  rofi -dmenu -p "Choose Wallpaper" -theme ~/.config/rofi/themes/gruvbox-dark.rasi)
+
+# If user made a selection
+if [ -n "$SELECTED" ]; then
+  wal -i "$SELECTED" -b colorthief
+  feh --bg-fill "$SELECTED"     # Or use nitrogen or swww depending on your system
+  pkill -USR1 sxhkd 2>/dev/null # Reload keybindings if needed
+fi
