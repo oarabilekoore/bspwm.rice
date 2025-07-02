@@ -11,6 +11,14 @@ Things you will need to clone this:
 -   dunst
 -   feh
 
+Nice Ahh pictures;
+
+![Desktop](./rice.nudes/Desktop.png)
+![Rofi Launcher](./rice.nudes/Rofi%20Launcher.png)
+![Wallpaper Chooser](./rice.nudes/Rofi%20Wallpaper%20Chooser.png)
+![Spotify + Cava](./rice.nudes/Spotify%20+%20Cava.png)
+![UnixP + Neovim](./rice.nudes/UnixP%20+%20Neovim.png)
+
 # License
 
 Tf, this is a rice ofcourse I am using other broski's rice so why think Licensing this is free Af = MIT
